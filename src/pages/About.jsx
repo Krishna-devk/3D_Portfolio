@@ -33,14 +33,28 @@ const About = () => {
 
         <div className='mt-16 flex flex-wrap gap-12'>
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+            <div className='block-container w-20 h-20 group relative cursor-pointer' key={skill.name}>
+              <div className='btn-back rounded-xl group-hover:scale-105 transition-transform duration-300 ease-out' />
+              <div className='btn-front rounded-xl flex justify-center items-center group-hover:scale-105 transition-transform duration-300 ease-out'>
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className='w-1/2 h-1/2 object-contain group-hover:scale-110 transition-transform duration-300 ease-out'
                 />
+              </div>
+
+              {/* Modern Tooltip Element */}
+              <div className="absolute -top-16 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out pointer-events-none z-50 flex flex-col items-center translate-y-2 group-hover:translate-y-0">
+                <div className="bg-white/90 backdrop-blur-md shadow-lg rounded-xl px-4 py-2 flex flex-col items-center border border-slate-200/50">
+                  <span className="font-poppins font-semibold text-slate-800 text-sm whitespace-nowrap">
+                    {skill.name}
+                  </span>
+                  <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
+                    {skill.type}
+                  </span>
+                </div>
+                {/* Tooltip Arrow */}
+                <div className="w-2.5 h-2.5 bg-white/90 rotate-45 -mt-1.5 border-b border-r border-slate-200/50 shadow-sm"></div>
               </div>
             </div>
           ))}

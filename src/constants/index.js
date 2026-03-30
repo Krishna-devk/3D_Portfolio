@@ -1,26 +1,18 @@
-import { meta, shopify, kiet, akg } from "../assets/images";
+import { kiet, akg } from "../assets/images";
 import {
     car,
     contact,
-    css,
-    estate,
-    express,
     git,
     github,
-    html,
     javascript,
     linkedin,
-    mongodb,
     motion,
-    mui,
     nextjs,
     nodejs,
     pricewise,
     react,
-    redux,
-    sass,
+    reactnative,
     snapgram,
-    summiz,
     tailwindcss,
     threads,
     typescript,
@@ -57,11 +49,6 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: react,
-        name: "React Native",
-        type: "Frontend",
-    },
-    {
         imageUrl: flutter,
         name: "Flutter",
         type: "Frontend",
@@ -72,9 +59,9 @@ export const skills = [
         type: "AI Developer",
     },
     {
-        imageUrl: mongodb,
-        name: "MERN Stack",
-        type: "Full Stack",
+        imageUrl: reactnative,
+        name: "React Native",
+        type: "Frontend",
     },
     {
         imageUrl: javascript,

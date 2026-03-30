@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import { CTA } from "../components";
 import { projects } from "../constants";
-import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
@@ -48,11 +47,7 @@ const Projects = () => {
                 >
                   Live Link
                 </Link>
-                <img
-                  src={arrow}
-                  alt='arrow'
-                  className='w-4 h-4 object-contain'
-                />
+                <span className='ml-2 text-blue-600'>→</span>
               </div>
             </div>
           </div>
