@@ -29,6 +29,7 @@ import soundoff from './soundoff.png'
 import python from './python.svg'
 import django from './django.svg'
 import fastapi from './fastapi.svg'
+import flutter from './flutter.png'
 
 export {
     css,
@@ -61,5 +62,6 @@ export {
     soundoff,
     python,
     django,
-    fastapi
+    fastapi,
+    flutter
 }

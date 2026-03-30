@@ -16,8 +16,7 @@ const Projects = () => {
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
         I specialize in Agentic AI, MERN, FastAPI, and more. While I've built various
-        applications, <strong className='font-semibold text-black'>⭐ AgriSense AI</strong> holds 
-        a special place as my KIET Hackathon-winning project (3rd Runner Up) that provides real-world 
+        applications, <strong className='font-semibold text-black'><span aria-label="Featured: ">⭐</span> AgriSense AI</strong> holds         a special place as my KIET Hackathon-winning project (3rd Runner Up) that provides real-world
         assistance to farmers. Feel free to explore my work and live applications!
       </p>
 

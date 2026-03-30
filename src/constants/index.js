@@ -26,7 +26,8 @@ import {
     typescript,
     python,
     django,
-    fastapi
+    fastapi,
+    flutter
 } from "../assets/icons";
 
 export const skills = [
@@ -61,7 +62,7 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: css,
+        imageUrl: flutter,
         name: "Flutter",
         type: "Frontend",
     },
@@ -73,7 +74,7 @@ export const skills = [
     {
         imageUrl: mongodb,
         name: "MERN Stack",
-        type: "Database",
+        type: "Full Stack",
     },
     {
         imageUrl: javascript,
@@ -152,11 +153,11 @@ export const socialLinks = [
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/krishna-agarwal-580ab425b',
     },
-    {
+    ...(import.meta.env.VITE_APP_PHONE ? [{
         name: 'Phone',
         iconUrl: contact,
-        link: 'tel:+919412354539',
-    }
+        link: `tel:${import.meta.env.VITE_APP_PHONE}`,
+    }] : [])
 ];
 
 export const projects = [

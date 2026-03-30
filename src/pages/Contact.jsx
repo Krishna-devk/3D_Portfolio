@@ -25,7 +25,7 @@ const Contact = () => {
     setLoading(true);
     setCurrentAnimation("hit");
 
-      emailjs
+    emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -77,8 +77,7 @@ const Contact = () => {
 
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get in Touch</h1>
-        <p className='text-slate-500 mt-2'>Or connect via phone: <a className='font-semibold text-blue-500' href='tel:+919412354539'>+91 9412354539</a></p>
-
+        <p className='text-slate-500 mt-2'>Or connect via phone: <a className='font-semibold text-blue-500' href={`tel:${import.meta.env.VITE_APP_CONTACT_PHONE}`}>{import.meta.env.VITE_APP_CONTACT_PHONE}</a></p>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
