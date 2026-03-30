@@ -15,11 +15,10 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        I specialize in Agentic AI, MERN, FastAPI, and more. While I've built various
+        applications, <strong className='font-semibold text-black'>⭐ AgriSense AI</strong> holds 
+        a special place as my KIET Hackathon-winning project (3rd Runner Up) that provides real-world 
+        assistance to farmers. Feel free to explore my work and live applications!
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
